@@ -1,0 +1,1 @@
+# azure-func-automated-test
