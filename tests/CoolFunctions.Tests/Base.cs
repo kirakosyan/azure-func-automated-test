@@ -24,11 +24,10 @@ namespace CoolFunctions.Tests
             var dir = Directory.GetCurrentDirectory();
 
             var dotnetExePath = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) +
-                @"\dotnet\dotnet.exe";
-            // var dotnetExecutablePath = @"%ProgramFiles%\dotnet\dotnet.exe";
+                @"/dotnet/dotnet.exe";
             var functionHostPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) +
-                @"\npm\node_modules\azure-functions-core-tools\bin\func.dll";
-            var functionApplicationPath = dir + @$"\..\..\..\..\..\sources\CoolFunctions\bin\{buildFolder}\netcoreapp3.1";
+                @"/npm/node_modules/azure-functions-core-tools/bin/func.dll";
+            var functionApplicationPath = dir + @$"/../../../../../sources/CoolFunctions/bin/{buildFolder}/netcoreapp3.1";
             var functionAppFolder = Path.GetRelativePath(Directory.GetCurrentDirectory(), functionApplicationPath);
 
             if (!Directory.Exists(functionApplicationPath))
