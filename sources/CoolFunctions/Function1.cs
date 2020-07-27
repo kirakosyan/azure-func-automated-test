@@ -12,7 +12,7 @@ namespace CoolFunctions
 {
     public static class Function1
     {
-        [FunctionName("Function1")]
+        [FunctionName("function1")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
