@@ -10,7 +10,7 @@ namespace CoolFunctions.Tests
         public async Task TestMethod1()
         {
             string parsedData = "";
-            var result = await Client.GetAsync("api/Function1?name=armen");
+            var result = await Client.GetAsync("api/function1?name=armen");
 
             if (result.IsSuccessStatusCode)
             {
